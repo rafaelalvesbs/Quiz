@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Profissional Azul</title>
+  <title>QUIZ PRO A1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <audio id="bg-music" src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" loop autoplay></audio>
+
   <div class="quiz-container">
+    <!-- Tela inicial -->
     <div id="start-screen">
-      <h1>Quiz Profissional</h1>
+      <h1>QUIZ!</h1>
+      <h3>Teste o seu nível de Inglês</h3>
       <button id="start-btn">Começar Quiz</button>
     </div>
 
+    <!-- Tela do quiz -->
     <div id="quiz-screen" class="hidden">
       <div id="question-container">
         <div id="question"></div>
@@ -24,6 +29,7 @@
       <p id="timer-text">Tempo restante: <span id="time">15</span>s</p>
     </div>
 
+    <!-- Tela final -->
     <div id="end-screen" class="hidden">
       <h2>Fim do Quiz!</h2>
       <p>Sua pontuação: <span id="score"></span></p>
@@ -34,6 +40,10 @@
       <button id="restart-btn">Recomeçar Quiz</button>
     </div>
   </div>
+
+  <audio id="correct-sound" src="https://freesound.org/data/previews/320/320655_5260871-lq.mp3"></audio>
+  <audio id="wrong-sound" src="https://freesound.org/data/previews/331/331912_3248244-lq.mp3"></audio>
+
   <script src="script.js"></script>
 </body>
 </html>
