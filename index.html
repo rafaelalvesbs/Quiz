@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Profissional Avançado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="start-screen">
+      <h1>Quiz Profissional</h1>
+      <button id="start-btn">Começar Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div id="question-container">
+        <div id="question"></div>
+        <div id="answers"></div>
+      </div>
+      <div id="timer-bar">
+        <div id="timer-fill"></div>
+      </div>
+    </div>
+
+    <div id="end-screen" class="hidden">
+      <h2>Fim do Quiz!</h2>
+      <p>Sua pontuação: <span id="score"></span></p>
+      <input type="text" id="player-name" placeholder="Digite seu nome">
+      <button id="save-score-btn">Salvar Pontuação</button>
+      <h3>Ranking:</h3>
+      <ul id="ranking-list"></ul>
+      <button id="restart-btn">Recomeçar Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
