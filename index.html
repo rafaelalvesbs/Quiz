@@ -12,9 +12,24 @@
   <div class="quiz-container">
     <!-- Tela inicial -->
     <div id="start-screen">
-      <h1>QUIZ!</h1>
-      <h3>Teste o seu nível de Inglês</h3>
-      <button id="start-btn">Começar Quiz</button>
+      <h1>QUIZ</h1>
+      <h3>Teste seu nível de Inglês</h3>
+      <p class="quiz-description">
+        Bem-vindo ao Quiz A1! Digite seu nome, escolha quantas perguntas quer responder e teste seu inglês. 
+        Cada resposta correta vale pontos e seu desempenho será registrado no ranking. Boa sorte!
+      </p>
+
+      <input type="text" id="player-name" placeholder="Digite seu nome">
+      <select id="num-questions">
+        <option value="5">5 Perguntas</option>
+        <option value="10" selected>10 Perguntas</option>
+        <option value="15">15 Perguntas</option>
+        <option value="20">20 Perguntas</option>
+        <option value="25">25 Perguntas</option>
+        <option value="30">30 Perguntas</option>
+      </select>
+
+      <button id="start-btn" disabled>Começar Quiz</button>
     </div>
 
     <!-- Tela do quiz -->
@@ -26,15 +41,14 @@
       <div id="timer-bar">
         <div id="timer-fill"></div>
       </div>
-      <p id="timer-text">Tempo restante: <span id="time">15</span>s</p>
+      <p id="timer-text">Tempo: <span id="time">0</span>s</p>
     </div>
 
     <!-- Tela final -->
     <div id="end-screen" class="hidden">
       <h2>Fim do Quiz!</h2>
+      <p>Parabéns, <span id="final-name"></span>!</p>
       <p>Sua pontuação: <span id="score"></span></p>
-      <input type="text" id="player-name" placeholder="Digite seu nome">
-      <button id="save-score-btn">Salvar Pontuação</button>
       <h3>Ranking:</h3>
       <ul id="ranking-list"></ul>
       <button id="restart-btn">Recomeçar Quiz</button>
